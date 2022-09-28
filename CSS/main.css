@@ -1,0 +1,77 @@
+* {
+    font-family: "Inconsolata", ;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    margin: -1px;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 500px 1000px 30px;
+}
+
+.top {
+    display: grid;
+    /*border: 1px solid red;*/
+    grid-template-rows: 50px 80px 310px;
+    background-image: url(../images/top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-gap: 10px;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(00, 00, 00, 0.75);
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 40px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px black;
+    font-family: "Zeyada";
+}
+
+.content {
+    display: grid;
+    border: 1px solid red;
+}
+.footer {
+    display: grid;
+    border: 1px solid red;
+}
+
+a {
+    color:white
+}
+#name {
+    font-weight: bold;
+}
