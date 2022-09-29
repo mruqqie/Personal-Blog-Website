@@ -1,5 +1,5 @@
 /* Medium Screens */
-@media (max-width:1220px) {
+@media (min-width:968px) and (max-width:1218px) {
     * {
         font-family: "Comic Neue" ;
     }
@@ -20,7 +20,7 @@
         display: grid;
         height: 100%;
         width: 100%;
-        grid-template-rows: 500px 2700px 30px;
+        grid-template-rows: 500px 1800px 30px;
     }
 
     .top {
@@ -72,17 +72,23 @@
     .content {
         display: grid;
         grid-template-columns: 75% 20%;
+        grid-template-rows: 90% 4%;
+        grid-template-areas:
+        "topLeft topRight"
+        "bottomLeft bottomRight";
         gap: 5%;
         margin-top: 3%;
     }
 
     .posts {
         display: grid;
+        grid-area: topLeft;
         justify-content: space-evenly;
         /* align-items: center;  */
         grid-template-columns: 40% 40%;
-        grid-template-rows: repeat(5, 21%);
-        gap: 3.1%;
+        grid-template-rows: repeat(5, 20%);
+        column-gap: 3.1%;
+        row-gap: 1%;
         text-align: center;
         text-shadow: 3px 3px black;
     }
@@ -113,17 +119,24 @@
 
     .allpost {
         display: flex;
+        grid-area: bottomLeft;
         align-items: flex-start;
+        margin-left: 50px;
+        /* margin-top: -50px; */
     }
 
     .form {
+        grid-area: topRight;
         display: flex;
         align-items: center;
     }
 
     .form .card {
-        border-radius: 50px;
+        border-radius: 20%;
+        margin-left: -30px;
+        margin-right: 20px;
     }
+
     .card #sub {
         text-align: center;
         font-size: Larger;
