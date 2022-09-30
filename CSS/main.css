@@ -1,4 +1,215 @@
+/*Medium Screens*/
+@media (min-width: 600px) and (max-width:900px) {
+    * {
+        font-family: "Comic Neue";
+    }
 
+    body {
+        background-color: rgb(36, 36, 36);
+        margin: -1px;
+        color: white;
+        overflow-x: hidden;
+    }
+
+    button {
+        color: rgb(219, 206, 206);
+        text-shadow: 1px 1px rgb(0, 0, 0);
+        background-color: rgb(51, 51, 50);
+    }
+
+    .container {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-rows: 40% 80% 3%;
+    }
+
+    .top {
+        display: grid;
+        grid-template-rows: 300px 80px 310px;
+        max-width: 100vw;
+        background-image: url(../images/top.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        gap: 10px;
+        overflow-wrap: break-word;
+        overflow: hidden;
+    }
+
+    .topbar {
+        display: grid;
+        grid-template-rows: 25% 10% 10% 10% 10% 10%; 
+        align-items: center;
+        justify-content: start;
+        gap: 3%;
+        margin-left: 3%;
+        /* background-color: black; */
+        color: white;
+        font-weight: 700;
+        text-shadow: 3px 3px black;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        /* background: rgba(00, 00, 00, 0.75); */
+        color: white;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-radius: 40px;
+        margin-top: -400px;
+    } 
+
+    .toggle  a, .menu{
+        display: none;
+    }
+
+    .toggle {
+		display: block;
+		background-color: black;
+		padding:20px 20px;	
+		color: white;
+		font-size: 25px;
+		text-decoration: none;
+		border: none;
+	}
+
+
+    #drop:checked + ul {
+		display: block;
+	}
+
+    #drop {
+        display: none;
+    }
+
+    nav ul {
+        float: center;
+        padding: 3px;
+        margin-top: 10px;
+        margin-left: -1px;
+        list-style: none;
+        position: relative;
+    }
+
+	nav ul li {
+		display: block;
+		width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        background: rgba(00, 00, 00, 0.75);
+	}
+
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 35px;
+        color: white;
+        text-align: center;
+        text-shadow: 5px 5px black;
+        font-family: "Zeyada";
+        margin-top: -80px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 75% 20%;
+        grid-template-rows: 90% 4%;
+        grid-template-areas:
+        "topLeft topRight"
+        "bottomLeft bottomRight";
+        gap: 5%;
+        margin-top: 3%;
+    }
+
+    .posts {
+        display: grid;
+        grid-area: topLeft;
+        justify-content: center;
+        /* align-items: center;  */
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
+        gap: 3.1%;
+        text-align: center;
+        text-shadow: 3px 3px black;
+    }
+
+    .card {
+        background-color: rgb(51, 51, 50);
+        color: rgb(219, 206, 206);
+        text-shadow: 1.5px 1.5px rgb(0, 0, 0);
+        box-shadow: 1.5px 1.5px rgb(0, 0, 0);
+        overflow: hidden;
+    }
+
+    .card img {
+        /* display: flex; */
+        width: 100%;
+        height: 55%;
+        /* height: 50% */
+
+    }
+
+    .card a {
+        color: rgb(219, 206, 206);
+        text-shadow: 1.5px 1.5px rgb(0, 0, 0);
+    }
+
+    .card p {
+        font-size: small;
+    }
+
+    .allpost {
+        display: flex;
+        grid-area: bottomLeft;
+        align-items: flex-start;
+        margin-left: 17px;
+        margin-top: -50px;
+    }
+
+    .form {
+        grid-area: topRight;
+        display: flex;
+        align-items: center;
+    }
+
+    .form .card {
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    .card #sub {
+        text-align: center;
+        font-size: Larger;
+    }
+
+    .card #subform {
+        text-align: center;
+    }
+
+    .card #submit {
+        text-align: center;
+    }
+
+    .footer {
+        display: grid;
+        text-align: center;
+    }
+
+    a {
+        color:white;
+        text-decoration: none;
+    }
+    #name {
+        font-weight: bold;
+    }
+}
 /*Large Screens*/
 @media (min-width:901px) {
     * {
@@ -27,7 +238,6 @@
 
     .top {
         display: grid;
-        /*border: 1px solid red;*/
         grid-template-rows: 70px 80px 310px;
         max-width: 100vw;
         background-image: url(../images/top.jpg);
@@ -53,12 +263,39 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         background: rgba(00, 00, 00, 0.75);
         color: white;
         margin-left: 70px;
         margin-right: 70px;
         border-radius: 40px;
+    }
+
+    .toggle, [id^=drop] {
+        display: none;
+    }
+
+    /* nav:after {
+        content:"";
+        display:table;
+        clear:both;
+    } */
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        padding:0;
+        margin:0;
+        list-style: none;
+        position: relative;
+    }
+
+    nav ul li {
+        margin: 0px;
+        display: inline-block;
+        font-size: 25px;
+        padding: 70px;
     }
 
     .intro {
