@@ -1,8 +1,4 @@
-@import "../CSS/post.css";
-@import "../CSS/medium.css";
-@import "../CSS/large.css";
-/* Small Screens */
-@media (max-width: 599px) {
+@media (min-width: 600px) and (max-width:900px) {
     * {
         font-family: "Comic Neue";
     }
@@ -24,9 +20,8 @@
         display: grid;
         height: 100%;
         width: 100%;
-        grid-template-rows: 600px 87% 1%;
+        grid-template-rows: 25% 80% 3%;
     }
-
 
     .top {
         display: grid;
@@ -70,18 +65,19 @@
     }
 
     .dLabel {
-        display: block;
-        background-color: black;
-        padding: 20px 20px;	
-        color: white;
-        font-size: 25px;
-        text-decoration: none;
-        border: none;
-    }
+		display: block;
+		background-color: black;
+		padding:20px 20px;	
+		color: white;
+		font-size: 25px;
+		text-decoration: none;
+		border: none;
+	}
+
 
     #drop:checked + ul {
-        display: block;
-    }
+		display: block;
+	}
 
     #drop {
         display: none;
@@ -96,13 +92,14 @@
         position: relative;
     }
 
-    nav ul li {
-        display: block;
-        width: 100%;
+	nav ul li {
+		display: block;
+		width: 100%;
         padding: 10px;
         font-size: 20px;
         background: rgba(00, 00, 00, 0.75);
-    }
+	}
+
 
     .intro {
         display: flex;
@@ -110,7 +107,7 @@
         align-items: top;
         justify-content: center;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 35px;
         color: white;
         text-align: center;
         text-shadow: 5px 5px black;
@@ -120,16 +117,18 @@
 
     .content {
         display: grid;
-        grid-template-rows: 85% 1% 9%;
-        gap: 1%;
+        grid-template-rows: 75% 1% 15%;
+        gap: 2%;
         margin-top: 3%;
     }
 
     .posts {
         display: grid;
         justify-content: center;
-        grid-template-rows: repeat(9, 10%);
-        row-gap: 1.25%;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: repeat(5, 18%);
+        gap: 3.1%;
+        row-gap: 2.5%;
         text-align: center;
         text-shadow: 3px 3px black;
     }
@@ -160,8 +159,8 @@
 
     .allpost {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        margin-left: 8.5%;
         margin-top: 0px;
     }
 
@@ -171,9 +170,10 @@
         justify-content: center;
     }
 
+
     .form .card {
         border-radius: 50px;
-        margin-top: 55px;
+        margin-right: 10px;
     }
     .card #sub {
         text-align: center;
@@ -190,14 +190,14 @@
     }
 
     .footer {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        text-align: center;
+        margin-top: 1%;
     }
 
     a {
         color:white;
         text-decoration: none;
-        margin-top: 1%;
     }
     #name {
         font-weight: bold;
