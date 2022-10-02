@@ -5,9 +5,11 @@
         <title>Blog Page</title>
         <meta name="Blog page" content="Blog post"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue">
     </head>
     <body>
-        <div class="container">
+        <div class="blogContainer">
             <div class="top">
                 <div class="topbar">
                     <div class="box" id="name">
@@ -15,51 +17,95 @@
                     </div>
                     <div class="box" id="phone">
                         <i class="fa fa-phone"></i>
-                        +234-810-123-4567
+                        <a href="#">+234-810-123-4567</a>
                     </div>
                     <div class="box" id="email">
                         <i class="fa fa-envelope"></i>
-                        NAME@EMAIL.COM
+                        <a href="#">name@email.com</a>
                     </div>
                     <div class="box" id="facebook">
                         <i class="fa fa-facebook-f"></i>
-                        WWW.FACEBOOK.COM/USERNAME
+                        <a href="#">www.facebook.com/username</a>
                     </div>
                     <div class="box" id="twitter">
                         <i class="fa fa-twitter"></i>
-                        WWW.TWITTER.COM/USERNAME
+                        <a href="#">www.twitter.com/username</a>
                     </div>
                     <div class="box" id="linkedin">
                         <i class="fa fa-linkedin-square"></i>
-                        www.linkedin.com/in/username/
+                        <a href="#">www.linkedin.com/in/username/</a>
                     </div>
                 </div>
-                <div class="navbar">
-                    <div class="navbar" id="home">
-                        <a href="main.html">Home</a>
-                    </div>
-                    <div class="navbar" id="about">
-                        <a href="about.html">About</a>
-                    </div>
-                    <div class="navbar" id="blog">
-                        <a href="blog.html">Blog</a>
-                    </div>
-                    <div class="navbar" id="shop">
-                        <a href="#">Shop</a>
-                    </div>
+                <div class="navbar" id="mynavbar">
+                    <nav>
+                        <label for="drop" class="dLabel">Menu</label>
+                        <input type="checkbox" id="drop">
+                            <ul class="menu">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop</a>
+                                </li>
+                            </ul>
+                    </nav>
                 </div>
-                <article class="blogpage" id="blogpage">
-                    <h3>BLOG</h3>
-                </article>
+                <div class="intro" id="welcome">
+                    <article>
+                        <h1>BLOG</h1>
+                    </article>
+                </div>
             </div>
-            <div class="content">
-                <div class="blogcontent">Some Blog Content</div>
+            <div class="blogcontent">
+                <div class="postcontent">
+                    <h2>Ryan Grantham sets off to prison!</h2>
+                    <h4>Canadian actor Ryan Grantham has been sentenced to life in prison after 
+                        pleading guilty to murdering his mother, Barbara Waite, in 2020.</h4>
+                    <p>
+                        The 24-year-old, who played Jeffery Augustine in teen drama Riverdale, 
+                        was sentenced at British Columbia Supreme Court in Vancouver on Wednesday.<br><br>
+                        He pleaded guilty to second-degree murder, after having initially been charged 
+                        with first-degree murder. Prosecutors said he had also plotted to kill Canadian 
+                        PM Justin Trudeau. Grantham admitted to shooting his mother in the back of the 
+                        head as she played piano in their home, north of Vancouver, the court heard.
+                    </p>
+                    <h3><b>'I killed my mother'</b></h3>
+                    <p>
+                        In a video taken on his Go-Pro camera after the killing, the actor filmed his 
+                        mother's body while saying: "I shot her in the back of the head. In the 
+                        moments after, she would have known it was me."<br><br>
+                        After drinking beer and smoking marijuana for hours following the murder, he 
+                        packed a car with three guns, ammunition and 12 Molotov cocktails he had made, 
+                        as well as camping supplies and directions to Mr Trudeau's Rideau Cottage 
+                        residence.<br><br>He drove roughly 200 kilometres east to the town of Hope, 
+                        before turning around and driving to a Vancouver police station, where he told 
+                        an officer: "I killed my mother".<br><br>The court also heard Grantham had considered 
+                        committing an act of mass violence at Vancouver's Lions Gate Bridge or at Simon 
+                        Fraser University, where he had been a student, en route before turning his 
+                        car around and handing himself in.<br><br>Former child actor Grantham appeared in one 
+                        episode of the CW network show Riverdale in 2019, and also featured in the fantasy 
+                        drama Supernatural, as well the 2010 film Diary of a Wimpy Kid.<br><br>
+                        Grantham has been in custody for the past two and a half years, law enforcement 
+                        officials in Vancouver told Deadline, and has been participating in a mental health 
+                        program since his arrest.<br><br>During the trial, his lawyers argued he had been 
+                        struggling with anxiety and clinical depression and had expressed a desire to kill 
+                        himself and harm others in the months leading up to him killing his mother.<br><br>
+                        He will not be eligible for parole for the first 14 years of his life sentence.
+                    </p>
+                </div>
                 <div class="author">
-                    <div class="card">
-                        <img src="authoravatar" alt="Author Avatar">
-                        <p><em>Author Name</em></p>
-                        <p>Worker at some company</p>
-                        <p>Author bio</p>
+                    <div class="authorcard">
+                        <img src="../Images/avatar.jfif" alt="Author Avatar">
+                        <h3><em>Ruqqie Al</em></h3>
+                        <h4>Founder of Long Story Short</h4>
+                        <p>Ruqqie is a graduate of Biomedical engineering. She is currently a full stack 
+                            developer who gossips on the side.</p>
                     </div>
                 </div>
             </div>
