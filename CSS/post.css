@@ -29,13 +29,19 @@
     text-shadow: 1.5px 1.5px rgb(0, 0, 0);
     box-shadow: 1.5px 1.5px rgb(0, 0, 0);
     overflow: hidden;
-    width: 450px;
+    max-width: 450px;
     justify-content: center;
-    margin-top: -5%;
+    margin-top: 5%;
 }
 
 .authorcard p {
     margin-right: 2%;
     margin-left: 2%;
     text-align: justify;
+}
+
+@media (min-width: 600px) {
+    .authorcard {
+        margin-top: -60px;
+    }
 }
